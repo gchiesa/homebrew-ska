@@ -5,21 +5,21 @@
 class Ska < Formula
   desc "SKA is a CLI and Library to scaffold, maintain and update from upstream blueprint your projects."
   homepage "https://github.com/gchiesa/ska"
-  version "0.0.11"
+  version "0.0.12"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/gchiesa/ska/releases/download/v0.0.11/ska_0.0.11_darwin_amd64.tar.gz"
-      sha256 "f772bf06925cff252a5d8ab36d702cec4990be545e6c230922ddaf58e9758387"
+      url "https://github.com/gchiesa/ska/releases/download/v0.0.12/ska_0.0.12_darwin_amd64.tar.gz"
+      sha256 "aa66eaf1f172796d5a92f13ad2499272fca13bcc88982df7da9ea5bb5bbba948"
 
       def install
         bin.install "ska"
       end
     end
     on_arm do
-      url "https://github.com/gchiesa/ska/releases/download/v0.0.11/ska_0.0.11_darwin_arm64.tar.gz"
-      sha256 "97e9307138be9022b3d3c01de37d049ab963deee2515d857ee3bdea2bb99d614"
+      url "https://github.com/gchiesa/ska/releases/download/v0.0.12/ska_0.0.12_darwin_arm64.tar.gz"
+      sha256 "3d674266c1704b810b898c65f964edd0489e6987c6682a2c0acbb4f459e20f88"
 
       def install
         bin.install "ska"
@@ -30,8 +30,8 @@ class Ska < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gchiesa/ska/releases/download/v0.0.11/ska_0.0.11_linux_amd64.tar.gz"
-        sha256 "50da6ec13ebb27c3c6a494e9541fd370f45e539b91095b281c1ef51b65cf37ae"
+        url "https://github.com/gchiesa/ska/releases/download/v0.0.12/ska_0.0.12_linux_amd64.tar.gz"
+        sha256 "af3e9656d38452c042ca0941e8761387d6ce2236b390f8808df7d4068dc531cb"
 
         def install
           bin.install "ska"
@@ -40,8 +40,8 @@ class Ska < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/gchiesa/ska/releases/download/v0.0.11/ska_0.0.11_linux_armv6.tar.gz"
-        sha256 "7c1137e4932f5339dc5681719b116fd0dac7d8b3cb285af55f6b549c55c3963d"
+        url "https://github.com/gchiesa/ska/releases/download/v0.0.12/ska_0.0.12_linux_armv6.tar.gz"
+        sha256 "6a6a00c18616de23c91697a2b8c8a79f01a5ff85b86341f9c185919c503680e2"
 
         def install
           bin.install "ska"
@@ -50,8 +50,8 @@ class Ska < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gchiesa/ska/releases/download/v0.0.11/ska_0.0.11_linux_arm64.tar.gz"
-        sha256 "6d843c276d1bb2c1f8517b859a8f539a4b6a0c297a4bb93ad496c1e415b5d475"
+        url "https://github.com/gchiesa/ska/releases/download/v0.0.12/ska_0.0.12_linux_arm64.tar.gz"
+        sha256 "d65320218a87b35bda0d07ae26cc2cac9cb70d070462f3c5cf1c05c11d1cc1a6"
 
         def install
           bin.install "ska"
